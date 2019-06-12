@@ -1,0 +1,233 @@
+
+
+<html>
+<head>
+ <link rel="stylesheet"
+href="style.css" type="text/css">
+
+<style>
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+background-color:pink;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color:teal;
+    color: black;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+}
+
+#sidebar {
+    background-color: red;
+    color: red;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #red;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color:teal;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color:teal;
+}
+
+.menuitem:first-child {
+   background-color:teal;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }    
+}
+  
+
+</style>
+
+
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>RESUME</h1>
+   
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Educational Qualifications
+       <li class="menuitem" onclick="reStyle(1)">Technical skills
+       <li class="menuitem" onclick="reStyle(2)">Workshops Attended
+       <li class="menuitem" onclick="reStyle(3)">Projects undertaken
+       <li class="menuitem" onclick="noStyles()">Academic Achievements
+       <li class="menuitem" onclick="noStyles()">Extra curiccular Activities
+      <li class="menuitem" onclick="noStyles()">Key skills
+     </ul>
+    </div>
+    <div id="main">
+      <h2> Manasa G L </h2>
+      <p>
+
+
+<table cellspacing="40">
+
+<tr >
+<td>
+<img src="C:\Users\srinivas\Pictures\manasa.jpeg" alt="profile photo" height="75" width="75">
+</td>
+
+<td>
+
+<p> manasagulur@gmail.com 
+<p>Gulur,Tumkur Taluk</p>
+</td>
+
+</tr>
+</table>
+<h4> mail to <a href="mailto:manasagulur@gmail.com"> emaillink</a> </h4>
+
+<hr>
+
+<h2>Educational Qualification </h2>
+
+
+<h3>*B.E  </h3>
+<p.class="main"> Computer science and Engg<p>
+<p>  Siddaganga institute of technology,Tumkur </font> </p> 
+
+<h3>*PU  </h3>
+<p.class="main">Science(PCMB) from KSEEB</p>
+<p>  Siddaganga womens college,Tumkur </p>
+<p> 97.1% </font></p>  
+
+ 
+
+<h3> *SSLC  </h3>
+<p>KSEEB</p>
+<p.class="main">  Nehru english medium high school,Gulur </p>
+<p> 97.28% </p> </font> </p>   
+<hr>
+
+<h2> Technical skills</h2>
+
+<p.class="main"> Languages:c,c++ </font></p>
+<hr>
+
+<h2>Workshops attended </h2>
+<p.class="main"> *Inspire camp</p>
+<p.class="main"> *FEEL employable workshop</font></p>
+<hr>
+
+<h2>Projects undertaken </h2>
+<p.class="main">*management of real estate</p>
+<p.class="main">*Auto recruitement </p>
+<p.class="main">*Textile shop management</p>
+<hr>
+
+<h2> Academic achievements </h2>
+
+<p.class="main">*Best student award-2010,2012</p>
+<p.class="main">*Certificate of excellence in activities</font></p>
+<hr>
+
+<h2>Extra Curiccular activities </h2>
+
+<p.class="main">*Represented school in taluk level badminton</p>
+<p.class="main">*First place in folk dance at district level</p>
+<p.class="main">*First place in drawing compitation</p>
+
+<hr>
+<h2>Key skills </h2>
+<p.class="main">*Quick learner</p>
+<p.class="main">*Positive attitiude</p>
+<p.class="main">*Ability to take better decisions </p>
+
+<hr>
+
+
+<form action="index.html"method="get">
+First Name:<input type="text"name="fname">
+<br>
+Last Name:<input type="text"name="lname">
+<br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
